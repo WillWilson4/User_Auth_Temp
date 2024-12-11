@@ -102,6 +102,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+#ONLY OK BEFORE DEPLOYMENT
+ALLOWED_HOSTS = ['*']
+#FOR DEPLOYMENT USE --> ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'yourdomain.com']
 
 #Create a .env file to store the variables for the following items so they are case sensitive and not included in the code
 #Variables seperated on 12/11/24
